@@ -9,7 +9,7 @@
 <ul>
     @foreach($evenementen as $event)
 
-        <li> {{ $event->body }} </li>
+        <li> {{ $event->body  }} </li>
 
     @endforeach
 

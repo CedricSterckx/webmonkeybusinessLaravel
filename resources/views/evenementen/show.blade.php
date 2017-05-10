@@ -6,14 +6,7 @@
 </head>
 <body>
 
-<ul>
-    @foreach($evenementen as $event)
-
-        <li> {{ $event->body }} </li>
-
-    @endforeach
-
-</ul>
+<h1>{{ $evenement->body }}</h1>
 
 </body>
 </html>
