@@ -6,14 +6,6 @@
 </head>
 <body>
 
-<ul>
-    @foreach($evenementen as $event)
-
-        <li> {{ $event->body  }} </li>
-
-    @endforeach
-
-</ul>
 
 </body>
 </html>

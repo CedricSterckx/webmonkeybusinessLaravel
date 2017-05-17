@@ -13,7 +13,7 @@ class CreateEvenementenTable extends Migration
      */
     public function up()
     {
-        Schema::create('evenementen', function (Blueprint $table) {
+        Schema::create('evenements', function (Blueprint $table) {
             $table->increments('id');
             $table->string('evenementNaam');
             $table->dateTime("evenementBeginDatum");

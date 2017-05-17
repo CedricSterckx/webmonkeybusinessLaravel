@@ -11,29 +11,33 @@
 |
 */
 
-Route::get('/evenementen ', function () {
-
-    $evenementen = DB::table('evenementen')->get();
+//Zonder Eloquent
+//Route::get('/evenementen ', function () {
 //
-//        dd($evenementen);
+//  //  $evenementen = DB::table('evenementen')->get();
+////
+////    dd($evenementen);
+//  $evenementen = App\Evenement::all();
+//    return view('evenementen.evenementen-list', compact('evenementen'));
+//
+//});
+//Route::get('/evenement/{id}', function ($id) {
+//
+//    $evenement = DB::table('evenementen')->find($id);
+//
+//
+//    return view('evenementen.show', compact('evenement'));
+//});
 
-    return view('welcome', compact('evenementen'));
-
-});
-
-
-Route::get('/evenement/{id}', function ($id) {
-
-    $evenement = DB::table('evenementen')->find($id);
-
-
-    return view('evenementen.show', compact($evenement));
-});
-
-
+//Eloquent
+Route::get('/evenements', 'EvenementsController@index');
+Route::get('/evenements/{evenement}', 'EvenementsController@show');
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+

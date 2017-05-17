@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1>{{ $evenement->body }}</h1>
+<h1> {{$evenement->evenementNaam}}</h1>
 
 </body>
 </html>
