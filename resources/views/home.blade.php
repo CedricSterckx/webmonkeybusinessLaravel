@@ -9,6 +9,9 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    <p></p>
+                    <a href="./evenements"> <button class="btn btn-primary">Evenement aanmaken</button></a>
+                    <a href=""><button class="btn btn-primary">Klant aanmaken</button></a>
                 </div>
             </div>
         </div>

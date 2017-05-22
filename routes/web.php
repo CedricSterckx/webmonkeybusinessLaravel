@@ -34,10 +34,12 @@ Route::get('/evenements', 'EvenementsController@index');
 Route::get('/evenements/{evenement}', 'EvenementsController@show');
 
 
+//Route::get('/', 'EvenementsController@index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 
 
