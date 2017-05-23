@@ -11,9 +11,9 @@
 
 
 <ul>
-    @foreach ( as $event)
+    @foreach ($evenementen as $event)
 
-        <li><a href="/evenement/{{$event->id}}"> {{$event->evenementNaam}} </a></li>
+        <li><a href="/evenement/{{$event->id}}"> {{ $event[1]->Naam }} </a></li>
 
     @endforeach;
 

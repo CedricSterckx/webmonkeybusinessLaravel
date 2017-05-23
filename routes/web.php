@@ -37,6 +37,15 @@ Route::get('evenements/allEvents', 'EvenementsController@showAllEvents');
 Route::get('/evenements/{evenement}', 'EvenementsController@show');
 Route::post('evenements/create', 'EvenementsController@Create');
 
+//Klanten
+Route::get('/klanten', 'KlantenController@Index');
+Route::post('klanten/create', 'KlantenController@Create');
+
+
+
+
+
+Route::get('succes', 'succesController@index');
 
 
 //Klanten

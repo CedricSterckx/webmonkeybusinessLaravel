@@ -15,15 +15,15 @@ class CreateKlantsTable extends Migration
     {
         Schema::create('klants', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('klantnummer');
-            $table->string("naam");
-            $table->string("voornaam");
-            $table->string("postcode");
-            $table->string("gemeente");
-            $table->string("straat");
-            $table->string("huisnummer");
-            $table->integer("telefoonnummer");
-            $table->string("email");
+            $table->integer('Klantnummer');
+            $table->string("Naam");
+            $table->string("Voornaam");
+            $table->string("Postcode");
+            $table->string("Gemeente");
+            $table->string("Straat");
+            $table->string("Huisnummer");
+            $table->integer("Telefoonnummer");
+            $table->string("Email");
             $table->timestamps();
         });
     }

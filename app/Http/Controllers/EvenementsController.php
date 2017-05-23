@@ -59,7 +59,7 @@ class EvenementsController extends Controller
         ]);
 
 
-        $this->showAllEvents();
+        return view('succes.succes');
     }
 
 }
