@@ -30,8 +30,17 @@
 //});
 
 //Eloquent
-Route::get('/evenements', 'EvenementsController@index');
+
+//Evenementen
+Route::get('/evenements', 'EvenementsController@Index');
+Route::get('evenements/allEvents', 'EvenementsController@showAllEvents');
 Route::get('/evenements/{evenement}', 'EvenementsController@show');
+Route::post('evenements/create', 'EvenementsController@Create');
+
+
+
+//Klanten
+Route::get('/klanten', 'KlantenController@index');
 
 
 //Route::get('/', 'EvenementsController@index');

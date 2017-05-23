@@ -6,10 +6,14 @@
 </head>
 <body>
 
-<ul>
-    @foreach ($evenementen as $event)
 
-        <li><a href="/evenement/{{$event->id}}"> {{ $event->evenementNaam}}</a> </li>
+
+
+
+<ul>
+    @foreach ( as $event)
+
+        <li><a href="/evenement/{{$event->id}}"> {{$event->evenementNaam}} </a></li>
 
     @endforeach;
 

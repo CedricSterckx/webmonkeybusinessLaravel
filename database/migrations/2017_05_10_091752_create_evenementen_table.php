@@ -15,12 +15,13 @@ class CreateEvenementenTable extends Migration
     {
         Schema::create('evenements', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('evenementNaam');
-            $table->dateTime("evenementBeginDatum");
-            $table->dateTime("evenementEindDatum");
-            $table->integer("klantnummer");
-            $table->integer("evenementKost");
-            $table->string("evenementDescription");
+            $table->integer("Klantnummer");
+            $table->string('Naam');
+            $table->dateTime("Begindatum");
+            $table->dateTime("EindDatum");
+            $table->integer("Evenementkost");
+            $table->string("Description");
+            $table->string("Locatie");
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateEvenementenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('evenementen');
+        Schema::dropIfExists('evenements');
     }
 }
